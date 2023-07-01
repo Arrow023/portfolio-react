@@ -11,9 +11,11 @@ set /p commitMsg="Enter commit Message: "
 git commit -m "%commitMsg%"
 git push -u origin master --force
 echo "--------------- Source code pushed to base repo ----------------------"
+rmdir /s /q build
 echo "Distribution copy started...."
-START /B /WAIT cmd /c xcopy build ..\dist /i /e
+START /B /WAIT cmd /c xcopy build ..\dist /i /e /Y
 echo "Dist copy completed...."
+cd ..\dist
 git add .
 echo "Enter commit message for dist :"
 set /p distMsg="Enter commit Message: "
