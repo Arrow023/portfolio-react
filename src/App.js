@@ -19,7 +19,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {this.detectMob() ? alert("Please switch to Desktop to enable Chat Assistant"): <Chatbot/>}
+        {/* {this.detectMob() ? alert("Please switch to Desktop to enable Chat Assistant"): <Chatbot/>} */}
         <Header resumeData={resumeData}/>
         <About resumeData={resumeData}/>
         <Resume resumeData={resumeData}/>

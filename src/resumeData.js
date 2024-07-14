@@ -1,10 +1,10 @@
 let resumeData = {
     "imagebaseurl":"https://piyushchouhan.netlify.app/",
     "name": "Piyush Chouhan",
-    "role": "Machine Learning Enthusiast || MEAN Stack Developer || .NET Developer",
+    "role": "Azure Migration Engineer | Cloud Solutions Architect | Full stack .NET Developer",
     "linkedinId":"https://www.linkedin.com/in/piyush-chouhan-72b747155/",
     "githubid": "https://www.github.com/Arrow023",
-    "roleDescription": " I like dabbling in various parts of fullstack development and like to learn about new technologies, write technical articles or scrape the sites. A fan of automation. I'm a very lazy person, I build bots to automate my tasks.",
+    "roleDescription": " Experienced Azure Migration Engineer and .NET Developer adept at leading seamless cloud migrations and optimizing application performance. Skilled in Azure Key Vault, Azure App Insights, and .NET Core, seeking a role to leverage expertise in both Azure cloud solutions and .NET development to deliver scalable, secure, and high-performing solutions.",
     "socialLinks":[
         {
           "name":"linkedin",
@@ -27,7 +27,7 @@ let resumeData = {
           "className":"fa fa-envelope"
         }
       ],
-    "aboutme":"I am a self taught Full Stack Web Developer and Machine Learning Developer, currently diving deeper into Machine Learning. I believe that to be successful in life, one needs to be obsessive with their dreams and keep working towards them.",
+    "aboutme":"I am an experienced Azure Migration Engineer and .NET Developer with a passion for creating scalable, secure, and high-performing solutions. With expertise in Angular, MSSQL, and .NET Web API, I excel in building dynamic applications that meet modern business needs. My background in cloud solutions architecture and application modernization allows me to drive seamless cloud migrations and optimize application performance. I am dedicated to leveraging my skills to deliver innovative and efficient solutions that enhance user experiences and business operations.",
     "address":"India",
     "website":"https://piyushchouhan.netlify.app/",
     "education":[
@@ -56,8 +56,15 @@ let resumeData = {
     "work":[
       {
         "CompanyName":"Cognizant Technology Solutions",
+        "specialization":"Software Developer",
+        "MonthOfLeaving":"August 2023 - Present",
+        "YearOfLeaving":"2023",
+        "Achievements":"Azure Migration Engineer and .NET Developer specializing in Angular, MSSQL, and .NET Web API. Responsible for creating scalable, secure solutions and driving seamless cloud migrations."
+      },
+      {
+        "CompanyName":"Cognizant Technology Solutions",
         "specialization":"Jr. Software Developer",
-        "MonthOfLeaving":"August 2022 - Present",
+        "MonthOfLeaving":"August 2022 - August",
         "YearOfLeaving":"2023",
         "Achievements":"Working as a Azure cloud migrator and securing apps by implementing JWT integration using WebSeal and DataPower."
       },
