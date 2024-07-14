@@ -38,7 +38,7 @@ pipeline {
                         bat 'echo "Build pushed successfully....."'
                         bat 'echo "**************** Netlify push completed ****************"'
                     } else {
-                        error 'Push Skipped: No changes detected'
+                        bat 'echo "Push Skipped: No changes detected"'
                     }
                 }
                 
