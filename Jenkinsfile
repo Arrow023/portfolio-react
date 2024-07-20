@@ -24,12 +24,12 @@ pipeline {
 
         stage('Push Distribution') {
             steps {
-                bat 'cd /d E:\\DevOps\\Staging\\portfolio\\dist'
-                bat '"C:\\Program Files\\Git\\bin\\git.exe" config --global --add safe.directory E:/DevOps/Staging/portfolio/dist'
-                bat '"C:\\Program Files\\Git\\bin\\git.exe" config --global user.email "piyushchohan48@gmail.com"'
-                bat '"C:\\Program Files\\Git\\bin\\git.exe" config --global user.name "arrow023"'
-                bat '"C:\\Program Files\\Git\\bin\\git.exe" add .'
-                script {
+                dir('E:\\DevOps\\Staging\\portfolio\\dist') {
+                    bat '"C:\\Program Files\\Git\\bin\\git.exe" config --global --add safe.directory E:/DevOps/Staging/portfolio/dist'
+                    bat '"C:\\Program Files\\Git\\bin\\git.exe" config --global user.email "piyushchohan48@gmail.com"'
+                    bat '"C:\\Program Files\\Git\\bin\\git.exe" config --global user.name "arrow023"'
+                    bat '"C:\\Program Files\\Git\\bin\\git.exe" add .'
+                    script {
                     def commitExitCode = bat returnStatus: true, script: '"C:\\Program Files\\Git\\bin\\git.exe" commit -m "Build-%BUILD_NUMBER%"'
                     if (commitExitCode == 0) {
                         bat 'echo "Commit successful"'
@@ -41,6 +41,10 @@ pipeline {
                         bat 'echo "Push Skipped: No changes detected"'
                     }
                 }
+                }
+                //bat 'cd /d E:\\DevOps\\Staging\\portfolio\\dist'
+                
+                
                 
             }
         }
