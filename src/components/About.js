@@ -15,8 +15,8 @@ export default class About extends Component {
 
             <div className="three columns">
 
-               <img className="profile-pic"  src="images/profilepic.jpg" alt="" />
-               {this.detectMob()?<img src="images/profilepic.jpg" alt="" />:null}
+               <img className="profile-pic"  src="images/profile_pic.png" alt="" />
+               {this.detectMob()?<img src="images/profile_pic.png" alt="" />:null}
             </div>
 
             <div className="nine columns main-col">
